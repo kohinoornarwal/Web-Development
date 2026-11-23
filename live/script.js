@@ -1,8 +1,7 @@
 // ---------------------------------------------------------------
-// EDIT THIS LIST to change titles, descriptions or links.
-// "live" is the page that opens when someone clicks "Open project".
-// It points to the project's folder. If a project's main file is not
-// named index.html, add the file name, e.g. "digital_clock/clock.html".
+// This version is for files placed inside the "live" folder.
+// The "../" in each "live" link means "go up one folder", so the
+// links reach digital_clock, expense_tracker and tic_tac_toe.
 // ---------------------------------------------------------------
 const REPO = "https://github.com/kohinoornarwal/Web-Development";
 
@@ -11,21 +10,21 @@ const projects = [
     icon: "⏰",
     title: "Digital Clock",
     description: "A clock that shows the current time on screen.",
-    live: "digital_clock/",
+    live: "../digital_clock/",
     code: REPO + "/tree/main/digital_clock"
   },
   {
     icon: "💸",
     title: "Expense Tracker",
     description: "Keep track of your spending and see where your money goes.",
-    live: "expense_tracker/",
+    live: "../expense_tracker/",
     code: REPO + "/tree/main/expense_tracker"
   },
   {
     icon: "❌⭕",
     title: "Tic Tac Toe",
     description: "The classic two-player game of Xs and Os.",
-    live: "tic_tac_toe/",
+    live: "../tic_tac_toe/",
     code: REPO + "/tree/main/tic_tac_toe"
   }
 ];
