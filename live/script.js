@@ -1,8 +1,3 @@
-// ---------------------------------------------------------------
-// This version is for files placed inside the "live" folder.
-// The "../" in each "live" link means "go up one folder", so the
-// links reach digital_clock, expense_tracker and tic_tac_toe.
-// ---------------------------------------------------------------
 const REPO = "https://github.com/kohinoornarwal/Web-Development";
 
 const projects = [
@@ -29,7 +24,6 @@ const projects = [
   }
 ];
 
-// Build the cards
 const grid = document.getElementById("project-grid");
 document.getElementById("count").textContent = projects.length;
 
@@ -48,7 +42,6 @@ projects.forEach(function (p, i) {
   grid.appendChild(card);
 });
 
-// Dark / light theme toggle (remembers the choice)
 const root = document.documentElement;
 const saved = localStorage.getItem("theme");
 if (saved) root.setAttribute("data-theme", saved);
